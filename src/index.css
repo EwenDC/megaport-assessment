@@ -1,0 +1,105 @@
+@import-normalize;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  background-color: rgb(255, 255, 250);
+}
+
+.app {
+  max-width: 80em;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3em;
+  font-variant: small-caps;
+  text-align: center;
+  margin: 0;
+}
+
+.appInput {
+  margin: 0.5rem 1em 0.5em 0;
+  display: inline-block;
+}
+
+.appInput input {
+  font-size: 1em;
+  margin-left: 0.5rem;
+  border-radius: 0.5em;
+  border: 0.1em solid lightgray;
+  padding: 0.2em 0.4em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border: 1px solid lightgray;
+}
+
+tr:hover {
+  border-bottom-color: gray;
+}
+
+th {
+  text-align: start;
+  font-variant: small-caps;
+}
+
+th,
+td {
+  padding: 0.1em 0.5em;
+  background-color: white;
+}
+
+th .sort {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  margin: 0 0 0.15em 0.5em;
+}
+
+th .sort.asc {
+  background-color: rgb(127, 127, 127);
+  clip-path: polygon(0 0, 50% 33%, 100% 0, 100% 66%, 50% 99%, 0 66%);
+}
+
+th .sort.desc {
+  background-color: rgb(127, 127, 127);
+  clip-path: polygon(0 33%, 50% 0, 100% 33%, 100% 99%, 50% 66%, 0 99%);
+}
+
+th:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(232, 232, 232);
+}
+
+h2 {
+  font-size: 1.25em;
+  font-variant: small-caps;
+  margin: 1em 0 0.25em;
+}
+
+button {
+  font-size: 1em;
+  font-variant: small-caps;
+  background-color: white;
+  border: 0.1em solid lightgray;
+  border-radius: 0.5em;
+  padding: 0.2em 0.4em;
+}
+
+button:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+button:active {
+  background-color: lightgray;
+}
